@@ -1,5 +1,5 @@
 import { Movie } from "./Movie";
-import { Proffesional } from "./Proffesional";
+import { Professional } from "./professional";
 
 
 
