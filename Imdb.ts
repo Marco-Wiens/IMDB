@@ -13,10 +13,7 @@ export class Imdb{
         fs.writeFileSync(nombreFichero,stringObj)
     }
     public obtenerInstanciaIMDB(nombreFichero:string):Imdb{
-        let objBuff = fs.readFileSync(nombreFichero)
-        let strObjBuff = objBuff.toString()
-        let objImdb = JSON.parse(strObjBuff)
-        let instanciaImdb = new Imdb(objImdb.peliculas)
+        let instanciaImdb = new Imdb(JSON.parse(fs.readFileSync(nombreFichero).toString()).peliculas)
         return instanciaImdb
     }
 }
