@@ -7,4 +7,3 @@ let professional3 = new Professional("Juanito", 18, 50, 160, false, "mexicano", 
 professional1.toString()
 professional2.toString()
 professional3.toString()
-
