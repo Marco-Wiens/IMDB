@@ -11,6 +11,5 @@ export class Professional{
     }
     public toString():void{
         console.log(this);
-        
     }
 }
